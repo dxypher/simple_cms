@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: simple_cms_development
   pool: 5
-  username: root
-  password:
+  username: nikhil
+  password: dxypher1947
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
