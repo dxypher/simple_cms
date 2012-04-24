@@ -52,3 +52,1611 @@ Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (36.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (161.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-04-23 19:24:52 -0500
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2-0.3.11-x86 (mingw32) lib/mysql2/client.rb:44:in `connect'
+  mysql2-0.3.11-x86 (mingw32) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:303:in `new_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:313:in `checkout_new_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `block (2 levels) in checkout'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:232:in `loop'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:232:in `block in checkout'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:398:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__679850190__call__768901519__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (109.0ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 19:24:57 -0500
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2-0.3.11-x86 (mingw32) lib/mysql2/client.rb:44:in `connect'
+  mysql2-0.3.11-x86 (mingw32) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:303:in `new_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:313:in `checkout_new_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `block (2 levels) in checkout'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:232:in `loop'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:232:in `block in checkout'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:398:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__679850190__call__768901519__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 19:44:28 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (44.0ms)
+Compiled demo.css  (73ms)  (pid 7164)
+Compiled index.css  (3ms)  (pid 7164)
+Compiled application.css  (126ms)  (pid 7164)
+Compiled jquery.js  (9ms)  (pid 7164)
+Compiled jquery_ujs.js  (0ms)  (pid 7164)
+Compiled demo.js  (1328ms)  (pid 7164)
+Compiled index.js  (770ms)  (pid 7164)
+Compiled application.js  (2329ms)  (pid 7164)
+Completed 200 OK in 2794ms (Views: 2794.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /index.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /jquery.js - 200 OK (27ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /demo.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /index.js - 200 OK (3ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /demo.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 19:44:33 -0500
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-04-23 20:15:20 -0500
+Served asset /rails.png - 200 OK (42ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:15:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:22:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:22:55 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 189ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /demo.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /index.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /demo.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:58 -0500
+Served asset /index.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:23:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:23:54 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:23:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:23:54 -0500
+Served asset /demo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:23:54 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:23:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:23:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:23:55 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:23:55 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:23:55 -0500
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:41:05 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:05 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:05 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:05 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:06 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:06 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:06 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:41:15 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:16 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:41:16 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:41 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:42 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:42 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:47:54 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:48:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:55:47 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 20:56:43 -0500
+Processing by DemoController#index as HTML
+Redirected to http://localhost:3000/demo/other_hello
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/demo/other_hello" for 127.0.0.1 at 2012-04-23 20:56:43 -0500
+Processing by DemoController#other_hello as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:02:02 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:02:03 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:03:09 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (89.0ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::World):
+    2: <p>Hello World</p>
+    3: 
+    4: <%= 1+1 %>
+    5: <%= target = World %>
+    6: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:5:in `_app_views_demo_hello_html_erb___828044496_34306500'
+  app/controllers/demo_controller.rb:8:in `hello'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:03:34 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::World):
+    2: <p>Hello World</p>
+    3: 
+    4: <%= 1+1 %>
+    5: <% target = World %>
+    6: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:5:in `_app_views_demo_hello_html_erb___828044496_39808848'
+  app/controllers/demo_controller.rb:8:in `hello'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:03:47 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined local variable or method `world' for #<#<Class:0x4b93960>:0x3346f98>):
+    2: <p>Hello World</p>
+    3: 
+    4: <%= 1+1 %>
+    5: <% target = world %>
+    6: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:5:in `_app_views_demo_hello_html_erb___828044496_28151952'
+  app/controllers/demo_controller.rb:8:in `hello'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:04:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:17:26 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `array' for #<#<Class:0x4123620>:0x3ea4278>):
+    6: <%= "Hello #{target}" %>
+    7: <%= "Hello #{target}" %>
+    8: 
+    9: <% array.each do |n| %>
+    10:   <%= n %> <br>
+    11: 
+    12: <% end %>
+  app/views/demo/hello.html.erb:9:in `_app_views_demo_hello_html_erb___828044496_35491800'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /demo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:17:51 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:22:52 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:23:22 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /demo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:24:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 21:24:40 -0500
+Processing by DemoController#index as HTML
+Redirected to http://localhost:3000/demo/other_hello
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/demo/other_hello" for 127.0.0.1 at 2012-04-23 21:24:40 -0500
+Processing by DemoController#other_hello as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:38 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:38 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:38 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:25:39 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:48 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:26:50 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Processing by DemoController#hello as HTML
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Served asset /index.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:03 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:04 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:04 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:04 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 21:32:05 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:05 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:06 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /demo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:17 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:32:36 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /index.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:32:37 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:34:05 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `param' for #<#<Class:0x4b93d50>:0x4c22088>):
+    1: <h1>Demo#hello</h1>
+    2: <p>Hello World</p>
+    3: 
+    4: ID: <%= param[:id]%>
+    5: <%= 1+1 %>
+    6: <% target = "World" %>
+    7: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:4:in `_app_views_demo_hello_html_erb___828044496_39929676'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:25 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:26 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:34:43 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:35:59 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `paramas' for #<DemoController:0x4608048>):
+  app/controllers/demo_controller.rb:9:in `hello'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /index.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:36:26 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:38:52 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (invalid radix 1):
+    2: <p>Hello World</p>
+    3: 
+    4: ID: <%=@id%><br>
+    5: Next Page: <%= @page.to_i +1%>
+    6: <%= 1+1 %>
+    7: <% target = "World" %>
+    8: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:5:in `to_i'
+  app/views/demo/hello.html.erb:5:in `_app_views_demo_hello_html_erb___828044496_36623124'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:39:28 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments(1 for 0)):
+    2: <p>Hello World</p>
+    3: 
+    4: ID: <%=@id%><br>
+    5: Next Page: <%= @page.to_i +1%>
+    6: <%= 1+1 %>
+    7: <% target = "World" %>
+    8: <%= "Hello #{target}" %>
+  app/views/demo/hello.html.erb:5:in `to_i'
+  app/views/demo/hello.html.erb:5:in `_app_views_demo_hello_html_erb___828044496_36623124'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (75.0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:41 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:40:50 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:40:51 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:41:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:42:17 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:17 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:17 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:17 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:18 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:18 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:18 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /demo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
