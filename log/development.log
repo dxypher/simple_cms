@@ -1660,3 +1660,338 @@ Served asset /index.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 21:42:33 -0500
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (230.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (40.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (0.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+Migrating to CreateUsers (20120426212605)
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(25), `last_name` varchar(50), `email` varchar(255) DEFAULT '' NOT NULL, `password` varchar(40), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (10.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212605')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (1.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (3.0ms)[0m  DROP TABLE `users`
+  [1m[36m (26.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212605'[0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (2.0ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212327'
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (50.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+Migrating to CreateUsers (20120426212605)
+  [1m[36m (30.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(25), `last_name` varchar(50), `email` varchar(255) DEFAULT '' NOT NULL, `password` varchar(40), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (20.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212605')
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (110.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+  [1m[36m (70.0ms)[0m  [1mALTER TABLE `admin_users` ADD `username` varchar(25)[0m
+  [1m[35m (20.0ms)[0m  ALTER TABLE `admin_users` CHANGE `email` `email` varchar(100) DEFAULT '' NOT NULL
+  [1m[36m (0.0ms)[0m  [1mSHOW COLUMNS FROM `admin_users` LIKE 'password'[0m
+  [1m[35m (50.0ms)[0m  ALTER TABLE `admin_users` CHANGE `password` `hased_password` varchar(40) DEFAULT NULL
+  [1m[36m (20.0ms)[0m  [1mALTER TABLE `add_column` ADD `salt` varchar(40)[0m
+Mysql2::Error: Table 'simple_cms_development.add_column' doesn't exist: ALTER TABLE `add_column` ADD `salt` varchar(40)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (0.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (1.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (1.0ms)[0m  DROP TABLE `users`
+Mysql2::Error: Unknown table 'users': DROP TABLE `users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (1.0ms)[0m  DROP TABLE `users`
+Mysql2::Error: Unknown table 'users': DROP TABLE `users`
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (1.0ms)[0m  DROP TABLE `users`
+Mysql2::Error: Unknown table 'users': DROP TABLE `users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (18.0ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212327'
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (71.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (4.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (1.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (1.0ms)[0m  DROP TABLE `users`
+Mysql2::Error: Unknown table 'users': DROP TABLE `users`
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (1.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (0.0ms)[0m  DROP TABLE `users`
+Mysql2::Error: Unknown table 'users': DROP TABLE `users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (0.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (1.0ms)[0m  ALTER TABLE `admin_users` ADD `username` varchar(25)
+Mysql2::Error: Duplicate column name 'username': ALTER TABLE `admin_users` ADD `username` varchar(25)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (0.0ms)[0m  ALTER TABLE `admin_users` ADD `username` varchar(25)
+Mysql2::Error: Duplicate column name 'username': ALTER TABLE `admin_users` ADD `username` varchar(25)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (58.0ms)[0m  ALTER TABLE `admin_users` CHANGE `email` `email` varchar(100) DEFAULT '' NOT NULL
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (3.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'hased_password'
+  [1m[36m (58.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `hased_password` `password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (7.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'password'
+  [1m[36m (65.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `password` `hashed_password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (25.0ms)[0m  ALTER TABLE `admin_users` ADD `salt` varchar(40)
+  [1m[36m (37.0ms)[0m  [1mCREATE INDEX `index_admin_users_on_username` ON `admin_users` (`username`)[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426220054')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (113.0ms)[0m  DROP INDEX `index_admin_users_on_username` ON `admin_users`
+  [1m[36m (39.0ms)[0m  [1mALTER TABLE `admin_users` DROP `salt`[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to AlterUsers (20120426220054)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to AlterUsers (20120426220054)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (1.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (4.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'hashed_password'
+  [1m[36m (93.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `hashed_password` `password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (43.0ms)[0m  ALTER TABLE `admin_users` CHANGE `email` `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (47.0ms)[0m  [1mALTER TABLE `admin_users` DROP `username`[0m
+  [1m[35m (6.0ms)[0m  RENAME TABLE `admin_users` TO `users`
+  [1m[36m (2.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426220054'[0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (3.0ms)[0m  DROP TABLE `users`
+  [1m[36m (2.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212605'[0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (1.0ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212327'
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (25.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+Migrating to CreateUsers (20120426212605)
+  [1m[36m (55.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(25), `last_name` varchar(50), `email` varchar(255) DEFAULT '' NOT NULL, `password` varchar(40), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (12.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212605')
+Migrating to AlterUsers (20120426220054)
+  [1m[36m (3.0ms)[0m  [1mRENAME TABLE `users` TO `admin_users`[0m
+  [1m[35m (70.0ms)[0m  ALTER TABLE `admin_users` ADD `username` varchar(25)
+  [1m[36m (50.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `email` `email` varchar(100) DEFAULT '' NOT NULL[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (1.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (0.0ms)[0m  RENAME TABLE `users` TO `admin_users`
+Mysql2::Error: Table 'admin_users' already exists: RENAME TABLE `users` TO `admin_users`
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (4.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'password'
+  [1m[36m (30.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `password` `hashed_password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (92.0ms)[0m  ALTER TABLE `admin_users` ADD `salt` varchar(40)
+  [1m[36m (25.0ms)[0m  [1mCREATE INDEX `index_admin_users_on_username` ON `admin_users` (`username`)[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426220054')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (11.0ms)[0m  DROP INDEX `index_admin_users_on_username` ON `admin_users`
+  [1m[36m (77.0ms)[0m  [1mALTER TABLE `admin_users` DROP `salt`[0m
+  [1m[35m (8.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'hashed_password'
+  [1m[36m (19.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `hashed_password` `password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (39.0ms)[0m  ALTER TABLE `admin_users` CHANGE `email` `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (37.0ms)[0m  [1mALTER TABLE `admin_users` DROP `username`[0m
+  [1m[35m (7.0ms)[0m  RENAME TABLE `admin_users` TO `users`
+  [1m[36m (56.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426220054'[0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (0.0ms)[0m  DROP TABLE `users`
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212605'[0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (10.0ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212327'
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+Migrating to CreateUsers (20120426212605)
+  [1m[36m (6.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(25), `last_name` varchar(50), `email` varchar(255) DEFAULT '' NOT NULL, `password` varchar(40), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212605')
+Migrating to AlterUsers (20120426220054)
+  [1m[36m (3.0ms)[0m  [1mRENAME TABLE `users` TO `admin_users`[0m
+  [1m[35m (18.0ms)[0m  ALTER TABLE `admin_users` ADD `username` varchar(25)
+  [1m[36m (48.2ms)[0m  [1mALTER TABLE `admin_users` CHANGE `email` `email` varchar(100) DEFAULT '' NOT NULL[0m
+  [1m[35m (15.6ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'password'
+  [1m[36m (45.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `password` `hashed_password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (25.0ms)[0m  ALTER TABLE `admin_users` ADD `salt` varchar(40)
+  [1m[36m (23.0ms)[0m  [1mCREATE INDEX `index_admin_users_on_username` ON `admin_users` (`username`)[0m
+  [1m[35m (4.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426220054')
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+  [1m[35m (86.0ms)[0m  CREATE TABLE `subjects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `position` int(11), `visible` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120427002355')[0m
+Migrating to CreatePages (20120427002542)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+  [1m[35m (111.0ms)[0m  CREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `visible` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.0ms)[0m  [1mCREATE INDEX `index_pages_on_subject_id` ON `pages` (`subject_id`)[0m
+Mysql2::Error: Key column 'subject_id' doesn't exist in table: CREATE  INDEX `index_pages_on_subject_id` ON `pages` (`subject_id`)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+  [1m[35m (1.0ms)[0m  CREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'pages' already exists: CREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+  [1m[35m (1.0ms)[0m  CREATE INDEX `index_pages_on_subject_id` ON `pages` (`subject_id`)
+Mysql2::Error: Key column 'subject_id' doesn't exist in table: CREATE  INDEX `index_pages_on_subject_id` ON `pages` (`subject_id`)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateSubjects (20120427002355)
+  [1m[35m (4.0ms)[0m  DROP TABLE `subjects`
+  [1m[36m (16.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120427002355'[0m
+Migrating to AlterUsers (20120426220054)
+  [1m[35m (29.0ms)[0m  DROP INDEX `index_admin_users_on_username` ON `admin_users`
+  [1m[36m (38.0ms)[0m  [1mALTER TABLE `admin_users` DROP `salt`[0m
+  [1m[35m (5.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'hashed_password'
+  [1m[36m (36.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `hashed_password` `password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (63.0ms)[0m  ALTER TABLE `admin_users` CHANGE `email` `email` varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (27.0ms)[0m  [1mALTER TABLE `admin_users` DROP `username`[0m
+  [1m[35m (26.6ms)[0m  RENAME TABLE `admin_users` TO `users`
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426220054'[0m
+Migrating to CreateUsers (20120426212605)
+  [1m[35m (46.8ms)[0m  DROP TABLE `users`
+  [1m[36m (0.0ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212605'[0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (4.0ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20120426212327'
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (98.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (14.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+  [1m[35m (37.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212327')
+Migrating to CreateUsers (20120426212605)
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(25), `last_name` varchar(50), `email` varchar(255) DEFAULT '' NOT NULL, `password` varchar(40), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426212605')
+Migrating to AlterUsers (20120426220054)
+  [1m[36m (23.0ms)[0m  [1mRENAME TABLE `users` TO `admin_users`[0m
+  [1m[35m (71.0ms)[0m  ALTER TABLE `admin_users` ADD `username` varchar(25)
+  [1m[36m (23.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `email` `email` varchar(100) DEFAULT '' NOT NULL[0m
+  [1m[35m (8.0ms)[0m  SHOW COLUMNS FROM `admin_users` LIKE 'password'
+  [1m[36m (15.0ms)[0m  [1mALTER TABLE `admin_users` CHANGE `password` `hashed_password` varchar(40) DEFAULT NULL[0m
+  [1m[35m (18.0ms)[0m  ALTER TABLE `admin_users` ADD `salt` varchar(40)
+  [1m[36m (15.0ms)[0m  [1mCREATE INDEX `index_admin_users_on_username` ON `admin_users` (`username`)[0m
+  [1m[35m (21.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120426220054')
+Migrating to CreateSubjects (20120427002355)
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE `subjects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `position` int(11), `visible` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120427002355')
+Migrating to CreatePages (20120427002542)
+  [1m[36m (29.0ms)[0m  [1mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `subject_id` int(11), `name` varchar(255), `permalink` varchar(255), `position` int(11), `visible` tinyint(1) DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (37.0ms)[0m  CREATE INDEX `index_pages_on_subject_id` ON `pages` (`subject_id`)
+  [1m[36m (18.0ms)[0m  [1mCREATE INDEX `index_pages_on_permalink` ON `pages` (`permalink`)[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120427002542')
+Migrating to CreateSections (20120427002719)
+  [1m[36m (10.0ms)[0m  [1mCREATE TABLE `sections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `name` varchar(255), `position` int(11), `visilbe` tinyint(1), `content_type` varchar(255), `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (17.0ms)[0m  CREATE INDEX `index_sections_on_page_id` ON `sections` (`page_id`)
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120427002719')[0m
+  [1m[35m (44.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
