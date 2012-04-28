@@ -1995,3 +1995,36 @@ Migrating to CreateSections (20120427002719)
   [1m[35m (17.0ms)[0m  CREATE INDEX `index_sections_on_page_id` ON `sections` (`page_id`)
   [1m[36m (2.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120427002719')[0m
   [1m[35m (44.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+Migrating to CreateSections (20120427002719)
+Migrating to CreateAdminUsersPagesJoin (20120428205449)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+Migrating to CreateSections (20120427002719)
+Migrating to CreateAdminUsersPagesJoin (20120428205449)
+  [1m[35m (23.0ms)[0m  CREATE TABLE `admin_users_pages` (`admin_user_id` int(11), `page_id` int(11)) ENGINE=InnoDB
+  [1m[36m (80.0ms)[0m  [1mCREATE INDEX `index_admin_users_pages_on_admin_user_id_and_page_id` ON `admin_users_pages` (`admin_user_id`, `page_id`)[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120428205449')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DoNothingYet (20120426212327)
+Migrating to CreateUsers (20120426212605)
+Migrating to AlterUsers (20120426220054)
+Migrating to CreateSubjects (20120427002355)
+Migrating to CreatePages (20120427002542)
+Migrating to CreateSections (20120427002719)
+Migrating to CreateAdminUsersPagesJoin (20120428205449)
+Migrating to CreateSectionEdits (20120428221931)
+  [1m[35m (64.0ms)[0m  CREATE TABLE `section_edits` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `admin_user_id` int(11), `section_id` int(11), `summary` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (21.0ms)[0m  [1mCREATE INDEX `index_section_edits_on_admin_user_id_and_section_id` ON `section_edits` (`admin_user_id`, `section_id`)[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120428221931')
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
