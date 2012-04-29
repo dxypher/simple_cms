@@ -2028,3 +2028,162 @@ Migrating to CreateSectionEdits (20120428221931)
   [1m[36m (21.0ms)[0m  [1mCREATE INDEX `index_section_edits_on_admin_user_id_and_section_id` ON `section_edits` (`admin_user_id`, `section_id`)[0m
   [1m[35m (3.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120428221931')
   [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-28 19:15:49 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 602ms (Views: 601.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /demo.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /index.css - 200 OK (3ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /demo.css - 200 OK (1ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /index.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:53 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-28 19:15:57 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:57 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:15:57 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-28 19:15:58 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:15:58 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:15:58 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-28 19:16:00 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:16:00 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:16:00 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Served asset /demo.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Served asset /index.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:16 -0500
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:16 -0500
+Served asset /index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:16 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2012-04-28 19:24:17 -0500
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendered demo/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /demo.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /index.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-28 19:24:18 -0500
+Served asset /application.js - 304 Not Modified (3ms)
