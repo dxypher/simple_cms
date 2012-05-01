@@ -1,5 +1,5 @@
 class Section < ActiveRecord::Base
-  attr_accessible :content, :content_type, :name, :position, :visilbe
+  attr_accessible :content, :content_type, :name, :position, :visible
 
   belongs_to :page
   has_many :section_edits
