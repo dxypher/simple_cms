@@ -11274,3 +11274,33 @@ Served asset /admin.css - 304 Not Modified (1ms)
 
 Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:09:29 -0500
 Served asset /public.css - 304 Not Modified (0ms)
+
+
+Started GET "/sections/list" for 127.0.0.1 at 2012-05-03 20:12:23 -0500
+Processing by SectionsController#list as HTML
+  [1m[35mSection Load (0.0ms)[0m  SELECT `sections`.* FROM `sections` ORDER BY sections.position ASC
+  Rendered sections/list.html.erb within layouts/admin (10.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-05-03 20:12:23 -0500
+Served asset /admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:12:23 -0500
+Served asset /public.css - 304 Not Modified (0ms)
+
+
+Started GET "/sections/list" for 127.0.0.1 at 2012-05-03 20:12:26 -0500
+Processing by SectionsController#list as HTML
+  [1m[36mSection Load (0.0ms)[0m  [1mSELECT `sections`.* FROM `sections` ORDER BY sections.position ASC[0m
+  Rendered sections/list.html.erb within layouts/admin (5.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-05-03 20:12:26 -0500
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:12:26 -0500
+Served asset /public.css - 304 Not Modified (0ms)
