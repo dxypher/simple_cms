@@ -11154,3 +11154,123 @@ Served asset /admin.css - 200 OK (6ms)
 
 Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:00:47 -0500
 Served asset /public.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-03 20:08:20 -0500
+Processing by DemoController#index as HTML
+  Rendered demo/index.html.erb within layouts/application (34.0ms)
+Compiled application.css  (3ms)  (pid 544)
+Completed 200 OK in 274ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:22 -0500
+Served asset /admin.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/demo.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:22 -0500
+Served asset /demo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:22 -0500
+Served asset /index.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:22 -0500
+Served asset /pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /public.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /sections.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /demo.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /index.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /pages.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /sections.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-03 20:08:23 -0500
+Served asset /subjects.js - 304 Not Modified (1ms)
+
+
+Started GET "/sections/list" for 127.0.0.1 at 2012-05-03 20:08:24 -0500
+Processing by SectionsController#list as HTML
+  [1m[36mSection Load (0.0ms)[0m  [1mSELECT `sections`.* FROM `sections` ORDER BY sections.position ASC[0m
+  Rendered sections/list.html.erb within layouts/admin (130.0ms)
+Completed 500 Internal Server Error in 304ms
+
+ActionView::Template::Error (undefined local variable or method `subject' for #<#<Class:0x404fdd8>:0x404e3e0>):
+    14:     <tr>
+    15:       <td><%= section.position %></td>
+    16:       <td><%= section.name %></td>
+    17:       <td class="center"><%= status_tag(subject.visible)%></td>
+    18:       <td class="center"><%= section.content %></td>
+    19:       <td class="actions">
+    20:         <%= link_to("Show", {:action => 'show', :id => section.id}, :class => 'action show') %>
+  app/views/sections/list.html.erb:17:in `block in _app_views_sections_list_html_erb___593235662_33712764'
+  app/views/sections/list.html.erb:13:in `_app_views_sections_list_html_erb___593235662_33712764'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+
+
+Started GET "/sections/list" for 127.0.0.1 at 2012-05-03 20:09:25 -0500
+Processing by SectionsController#list as HTML
+  [1m[35mSection Load (1.0ms)[0m  SELECT `sections`.* FROM `sections` ORDER BY sections.position ASC
+  Rendered sections/list.html.erb within layouts/admin (6.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:09:25 -0500
+Served asset /public.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-05-03 20:09:25 -0500
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/pages/list" for 127.0.0.1 at 2012-05-03 20:09:29 -0500
+Processing by PagesController#list as HTML
+  [1m[36mPage Load (0.0ms)[0m  [1mSELECT `pages`.* FROM `pages` ORDER BY pages.position ASC[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 2[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 4
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `sections` WHERE `sections`.`page_id` = 3[0m
+  Rendered pages/list.html.erb within layouts/admin (227.0ms)
+Completed 200 OK in 229ms (Views: 228.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2012-05-03 20:09:29 -0500
+Served asset /admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/public.css?body=1" for 127.0.0.1 at 2012-05-03 20:09:29 -0500
+Served asset /public.css - 304 Not Modified (0ms)
