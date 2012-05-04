@@ -1,4 +1,5 @@
 class SectionsController < ApplicationController
+	layout 'admin'
 	def list
 		@sections = Section.order("sections.position ASC")
 	end

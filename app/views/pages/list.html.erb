@@ -1,3 +1,4 @@
+<% @page_title = "Pages List" %>
 <div class="page list">
   <h2>Pages</h2>
   <%= link_to("Add New Page", {:action => 'new'}, :class => 'action new') %>
@@ -14,7 +15,7 @@
     <tr>
       <td><%= page.position %></td>
       <td><%= page.name %></td>
-      <td class="center"><%= page.visible ? 'Yes' : 'No' %></td>
+      <td class="center"><%= status_tag(subject.visible) %></td>
       <td class="center"><%= page.permalink %></td>
       <td class="center"><%= page.sections.size %></td>
       <td class="actions">

@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+	layout 'admin'
 	def list
 		@pages = Page.order("pages.position ASC")
 	end
