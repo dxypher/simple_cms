@@ -10,6 +10,8 @@ class SectionsController < ApplicationController
 
 	def new
 		@section = Section.new
+		@section_count = Section.count + 1
+		
 	end
 
 	def create
@@ -18,12 +20,18 @@ class SectionsController < ApplicationController
 		if @section.save
 			redirect_to(:action => 'list')
 		else
+			@section_count = Section.count + 1
 			render('new')
+			
+			
+
 		end
 	end
 
 	def edit
 		@section = Section.find_by_id(params[:id])
+		@section_count = Section.count
+		@page_count = Page.count
 	end
 
 	def update
@@ -31,6 +39,8 @@ class SectionsController < ApplicationController
 		if @section.update_attributes(params[:section])
 			redirect_to(:action => 'show', :id => @section.id)
 		else
+			@section_count = Section.count
+			@page_count = Page.count
 			render('edit')
 		end
 		
